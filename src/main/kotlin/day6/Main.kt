@@ -22,12 +22,12 @@ fun main() {
     println(findMarkerPositionV2(demo4))
     println(findMarkerPositionV2(demo5))
 
-    val fileTextDemo = getResourceAsText("day6/input.txt") ?: ""
+    val fileText = getResourceAsText("day6/input.txt") ?: ""
     // First result
-    println(findMarkerPosition(fileTextDemo))
+    println(findMarkerPosition(fileText))
 
     //Second result
-    println(findMarkerPositionV2(fileTextDemo))
+    println(findMarkerPositionV2(fileText))
 
 }
 
