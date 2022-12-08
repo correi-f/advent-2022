@@ -9,7 +9,7 @@ fun main() {
     println(elvesBagsDemo.maxOf { it.aliments.sum() })
 
     // Demo second response
-    println(elvesBagsDemo.map { it.aliments.sum() }.sortedDescending().reversed().takeLast(3).sum())
+    println(elvesBagsDemo.map { it.aliments.sum() }.sorted().takeLast(3).sum())
 
     val fileText1 = getResourceAsText("day1/input.txt") ?: ""
     val elvesBags1 = retrieveElvesBag(fileText1)
@@ -17,7 +17,7 @@ fun main() {
     println(elvesBags1.maxOf { it.aliments.sum() })
 
     // Second response
-    println(elvesBags1.map { it.aliments.sum() }.sortedDescending().reversed().takeLast(3).sum())
+    println(elvesBags1.map { it.aliments.sum() }.sorted().takeLast(3).sum())
 }
 
 fun retrieveElvesBag(fileText: String): List<Bag> {
