@@ -55,12 +55,9 @@ fun analyzeTreesV2(grid: Grid): Int {
 
 private fun seeVisibleTree(trees: List<Tree>, treeValue: Int): Int {
     var visibleTree = 0
-    var previousTreeValue = -1
     for (index in trees.indices) {
         visibleTree++
         if (trees[index].value >= treeValue) break
-        if (trees[index].value < previousTreeValue) continue
-        previousTreeValue = trees[index].value
     }
     return visibleTree
 }
